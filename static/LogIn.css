@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.Staff-Log-In-Page {
+    background-image: url('https://images.unsplash.com/photo-1505236858219-8359eb29e329?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1924&q=80');
+    height: 100vh;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-size: cover;
+}
+
+.Staff-Log-In-Page-Card {
+    background-color: white;
+    width: 600px;
+    padding: 30px;
+    border-radius: 6px;
+
+
+}
+
+.Staff-Log-In-Page-Card-heading {
+    font-size: 27px;
+    font-weight: bold;
+    color: #476b6b;
+}
+
+.Staff-Log-In-Page-Card-Label {
+    font-size: 18px;
+    color: grey;
+
+
+}
+
+.Staff-Log-In-Page-Card-icon {
+    font-size: 15px !important;
+    color: #0ef;
+}
+
+.Staff-Log-In-Page-Card-Input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    color: #0ef;
+}
+
+.Staff-Log-In-Page-Card-forgot {
+    font-size: 12px;
+    text-align: end;
+    margin-top: 0px;
+}
+
+.Staff-Log-In-Page-Card-forgot:hover {
+    color: #0ef;
+    font-size: 14px;
+    transition: .4s;
+}
+
+hr {
+    border: solid 0.2px #85adad;
+    margin-top: 6px;
+
+}
+
+.Staff-Log-In-Page-Card-button {
+    width: 100%;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 10px;
+    margin-top: 15px;
+    background: radial-gradient(circle, rgba(18, 217, 233, 1) 0%, rgba(18, 226, 200, 1) 35%, rgba(37, 203, 237, 1) 100%);
+    color: white;
+    font-weight: bold;
+    font-family: Roboto;
+}
+
+.Staff-Log-In-Page-Card-button:hover {
+    background: #0ef;
+    box-shadow: 0 0 50px #0ef;
+    color: white;
+    outline: none;
+}
+
+.sign-up-1 {
+    font-size: 12px;
+    color: #85adad;
+    text-align: center;
+}
+
+.sign-up-2 {
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    color: #476b6b;
+}
+
+.sign-up-2:hover {
+    color: #0ef;
+    font-size: 13px;
+    transition: .4s;
+
+}
+
+.error-msg {
+    font-size: 10px;
+    color: red;
+    margin-top: 5px;
+    margin-bottom: 0px;
+
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='SignUp.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="Staff-Sign-Up-Page d-flex flex-column justify-content-center  ">
+        <div class="container ">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="Staff-Sign-Up-Page-Card m-auto shadow-lg ">
+                        <h1 class="text-center Staff-Sign-Up-Page-Card-heading mb-2 ">Signup</h1>
+                        <form action="/SignUp" method = "POST" >
+                            <div class="mb-1">
+                                <label class="Staff-Sign-Up-Page-Card-Label" for="staffSignUpFirstName">FirstName</label>
+                                <div class="d-flex flex-row">
+                                    <i class="fa-solid fa-user Staff-Sign-Up-Page-Card-icon pt-1"></i>
+                                    <input name="FirstName" class="Staff-Sign-Up-Page-Card-Input ml-1" id="staffSignUpFirstName" type="text" placeholder="Type your First Name">
+
+                                </div>
+                                <p class="error-msg" id="FirtNameErrorMsg"></p>
+                                <hr />
+                            </div>
+                            <div class="mb-2">
+                                <label class="Staff-Sign-Up-Page-Card-Label" for="staffSignUpLastName">Last Name</label>
+                                <div class='d-flex flex-row'>
+                                    <i class="fa-solid fa-lock Staff-Sign-Up-Page-Card-icon pt-1"></i>
+                                    <input name="LastName" class="Staff-Sign-Up-Page-Card-Input ml-1" id="staffSignUpLastName" type="text" placeholder="Type your Last Name">
+                                </div>
+                                <p class="error-msg" id="LastNameErrorMsg"></p>
+                                <hr class="mb-1" />
+                            </div>
+
+                            <div class="mb-1">
+                                <label class="Staff-Sign-Up-Page-Card-Label" for="staffSignUpRegistrationId">Location</label>
+                                <div class="d-flex flex-row">
+                                    <i class="fa-solid fa-user Staff-Sign-Up-Page-Card-icon pt-1"></i>
+                                    <input name="Location" class="Staff-Sign-Up-Page-Card-Input ml-1" id="staffSignUpRegistrationId" type="text" placeholder="Type Enter your city">
+
+                                </div>
+                                <p class="error-msg" id="RegistrationIdErrorMsg"></p>
+                                <hr />
+                            </div>
+
+                            <div class="mb-1">
+                                <label class="Staff-Sign-Up-Page-Card-Label" for="staffSignUpEnterPasssword">New Password</label>
+                                <div class="d-flex flex-row">
+                                    <i class="fa-solid fa-user Staff-Sign-Up-Page-Card-icon pt-1"></i>
+                                    <input name="NewPassword" class="Staff-Sign-Up-Page-Card-Input ml-1" id="staffSignUpEnterPassword" type="password" placeholder="Type your Password">
+
+                                </div>
+                                <p class="error-msg" id="NewPasswordErrorMsg"></p>
+                                <hr />
+                            </div>
+
+                            <div class="mb-1">
+                                <label class="Staff-Sign-Up-Page-Card-Label" for="staffSignUpConfirmPassword">Confirm Password</label>
+                                <div class="d-flex flex-row">
+                                    <i class="fa-solid fa-user Staff-Sign-Up-Page-Card-icon pt-1"></i>
+                                    <input name="ConfirmPassword" class="Staff-Sign-Up-Page-Card-Input ml-1" id="staffSignUpConfirmPassword" type="password" placeholder="Type your Confirm Password">
+
+                                </div>
+                                <p class="error-msg" id="ConfirmPasswordErrorMag"></p>
+                                <hr />
+                            </div>
+                            <div class="mb-1">
+                                <label class="Staff-Sign-Up-Page-Card-Label" for="staffEmail">Email</label>
+                                <div class="d-flex flex-row">
+                                    <i class="fa-solid fa-user Staff-Sign-Up-Page-Card-icon pt-1"></i>
+                                    <input name="Email" class="Staff-Sign-Up-Page-Card-Input ml-1" id="staffEmail" type="text" placeholder="Type your Email">
+
+                                </div>
+                                <p class="error-msg" id="Emailerrormsg"></p>
+                                <hr />
+                            </div>
+
+
+                            <div>
+                                <button type="submit" value="Submit" class="Staff-Sign-Up-Page-Card-button">SIGNUP</button>
+                            </div>
+                            <div class="mt-2">
+                                <h6 class=" log-in-1">Or Log In Using</h6>
+                               <a href="/LogIn"> <h5  class="log-in-2">Log In</h5></a>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let staffSignUpUserNameEl = document.getElementById("staffSignUpFirstName");
+        let staffSignUpLastNameEl = document.getElementById("staffSignUpLastName");
+        let staffSignUpRegistrationIdEl = document.getElementById("staffSignUpRegistrationId");
+        let staffSignUpEnterPasswordEl = document.getElementById("staffSignUpEnterPassword");
+        let staffSignUpConfirmPasswordEl = document.getElementById("staffSignUpConfirmPassword");
+        let EmailerrormsgE1 = document.getElementById("Emailerrormsg")
+        let FirtNameErrorMsgEl = document.getElementById("FirtNameErrorMsg");
+        let LastNameErrorMsgEl = document.getElementById("LastNameErrorMsg");
+        let RegistrationIdErrorMsgEl = document.getElementById("RegistrationIdErrorMsg");
+        let NewPasswordErrorMsgEl = document.getElementById("NewPasswordErrorMsg");
+        let ConfirmPasswordErrorMagEl = document.getElementById("ConfirmPasswordErrorMag");
+        
+
+        staffSignUpUserNameEl.addEventListener("blur", function(event) {
+            if (event.target.value === "") {
+                FirtNameErrorMsgEl.textContent = "Required*";
+            } else {
+                FirtNameErrorMsgEl.textContent = "";
+            }
+        });
+        staffSignUpLastNameEl.addEventListener("blur", function(event) {
+            if (event.target.value === "") {
+                LastNameErrorMsgEl.textContent = "Required*";
+            } else {
+                LastNameErrorMsgEl.textContent = "";
+            }
+        });
+        staffSignUpRegistrationIdEl.addEventListener("blur", function(event) {
+            if (event.target.value === "") {
+                RegistrationIdErrorMsgEl.textContent = "Required*";
+            } else {
+                RegistrationIdErrorMsgEl.textContent = "";
+            }
+        });
+        staffSignUpEnterPasswordEl.addEventListener("blur", function(event) {
+            if (event.target.value === "") {
+                NewPasswordErrorMsgEl.textContent = "Required*";
+            } else {
+                NewPasswordErrorMsgEl.textContent = "";
+            }
+        });
+        staffSignUpConfirmPasswordEl.addEventListener("blur", function(event) {
+            if (event.target.value === "") {
+                ConfirmPasswordErrorMsgEl.textContent = "Required*";
+            } else {
+                ConfirmPasswordErrorMsgEl.textContent = "";
+            }
+        });
+         staffEmailE1.addEventListener("blur",function(event){
+             if (event.target.value === ""){
+                 EmailerrormsgE1.textContent = "Required*";
+             }
+                 else{
+                     Emailerrormsg.textContent = "";
+                 }   
+         });
+    </script>
+
+
+
+</body>
+
+</html>
